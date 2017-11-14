@@ -4,10 +4,10 @@
     state: latest
 
 - name: ===================== Download build agent =====================
-  get_url:
-    url: http://35.197.76.250/update/buildAgent.zip
-    dest: /tmp/foo.conf
-    mode: 0440
+  unarchive:
+    src: http://35.197.76.250/update/buildAgent.zip
+    dest: /opt/
+    remote_src: yes
 
 
 
