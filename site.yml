@@ -1,0 +1,6 @@
+- name: TC_agent_installation  
+  hosts:
+  - deployment_server
+
+  roles:
+   - install_agent
