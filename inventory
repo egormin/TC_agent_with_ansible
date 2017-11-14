@@ -1,1 +1,1 @@
-deployment_server tc_agent=35.188.61.32 ansible_ssh_user=root ansible_ssh_pass= ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+tc_agent ansible_host=35.188.61.32 ansible_ssh_user=root ansible_ssh_pass= ansible_ssh_common_args='-o StrictHostKeyChecking=no'
