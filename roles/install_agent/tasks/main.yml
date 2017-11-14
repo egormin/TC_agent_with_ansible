@@ -19,6 +19,12 @@
     dest: /opt/buildAgent
     remote_src: yes
 
+- name: ==================== buildAgent config copying =================
+  template:
+    src: buildagent_properties.j2
+    dest: /opt/buildAgent/conf/buildAgent.properties
+
+
 
 
 
