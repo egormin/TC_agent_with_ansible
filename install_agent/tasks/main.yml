@@ -3,6 +3,11 @@
     name: java
     state: latest
 
+- name: ===================== Install unzip =====================
+  yum:
+    name: unzip
+    state: latest
+
 - name: ===================== Download build agent =====================
   unarchive:
     src: http://35.197.76.250/update/buildAgent.zip
