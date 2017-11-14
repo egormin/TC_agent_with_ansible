@@ -8,6 +8,11 @@
     name: unzip
     state: latest
 
+- file:
+    path: /opt/buildAgent
+    state: directory
+    mode: 0755
+
 - name: ===================== Download build agent =====================
   unarchive:
     src: http://35.197.76.250/update/buildAgent.zip
