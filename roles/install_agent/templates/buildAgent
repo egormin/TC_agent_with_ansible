@@ -18,6 +18,9 @@ start)
 stop)
  su - $USER -c "cd /opt/buildAgent/bin ; ./agent.sh stop"
 ;;
+status)
+ su - $USER -c "cd /opt/buildAgent/bin ; ./agent.sh status"
+;;
 *)
   echo "usage start/stop"
   exit 1
